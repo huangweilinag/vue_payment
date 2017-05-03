@@ -1,6 +1,7 @@
 import {
   INCREMENT,
-  DECREMENT
+  DECREMENT,
+  CLICKODD
 } from './types'
 import getters from './getters'
 
@@ -14,6 +15,11 @@ const mutations = {
   },
   [DECREMENT] (state) {
     state.count--
+  },
+  [CLICKODD] (state) {
+    if (!(state.count % 2)) {
+      state.count++
+    }
   }
 }
 

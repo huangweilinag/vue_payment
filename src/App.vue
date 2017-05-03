@@ -10,5 +10,6 @@
 }
 </script>
 
-<style>
+<style lang="less">
+  @import './styles/common';
 </style>

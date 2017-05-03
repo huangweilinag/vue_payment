@@ -3,11 +3,11 @@
     <h3>welcome vuex-demo</h3>
     <input type="button" value="增加" @click = 'increment'>
     <input type="button" value="减少" @click = 'decrement'>
-    <input type="button" value="偶数才能点击+" >
+    <input type="button" value="偶数才能点击+" @click = 'clickOdd'>
     <input type="button" value="点击异步" >
 
     <div>
-      现在数字为:{{count}} , 它现在是 
+      现在数字为:{{count}} , 它现在是{{getOdd ? '偶数' : '奇数'}} 
     </div>
  
   </div>
@@ -18,11 +18,13 @@ import {mapGetters, mapActions} from 'vuex'
 import page from '../components/page'
 export default {
   computed: mapGetters([
-    'count'
+    'count',
+    'getOdd'
   ]),
   methods: mapActions([
     'increment',
-    'decrement'
+    'decrement',
+    'clickOdd'
   ]),
   components: {
     page
