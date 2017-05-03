@@ -9,11 +9,13 @@
     <div>
       现在数字为:{{count}} , 它现在是 
     </div>
+ 
   </div>
 </template>
 
 <script>
 import {mapGetters, mapActions} from 'vuex'
+import page from '../components/page'
 export default {
   computed: mapGetters([
     'count'
@@ -21,7 +23,10 @@ export default {
   methods: mapActions([
     'increment',
     'decrement'
-  ])
+  ]),
+  components: {
+    page
+  }
 }
 </script>
 

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import Test1 from '@/components/Test1'
+import Hello from '@/views/Hello'
+import Test1 from '@/views/Test1'
+import Test2 from '@/views/Test2'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/test1',
       name: 'Test1',
       component: Test1
+    },
+    {
+      path: '/test2',
+      name: 'Test2',
+      component: Test2
     }
   ]
 })

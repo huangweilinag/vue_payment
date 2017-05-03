@@ -1,7 +1,7 @@
 # vue_payment
 
 > 使用vue框架编写支付项目
-> 
+
 
 ##技术栈
 > vue-cli    webpack模板
